@@ -64,8 +64,7 @@
 				time: '5:30 PM – 6:45 PM',
 				title: 'Keynote Address \u2014 Gulnur Mukazhanova',
 				type: 'keynote',
-				talk: '\u201CContemporary Art from Kazakhstan: Identity, Memory and Cultural Transformation\u201D',
-				location: 'Franke Institute for the Humanities · 1100 E 57th St, Chicago, IL 60637'
+				talk: '\u201CContemporary Art from Kazakhstan: Identity, Memory and Cultural Transformation\u201D'
 			},
 			{ time: '6:45 PM – 7:45 PM', title: 'Dinner · Cello and Viola Performance', type: 'break', provider: 'Arzan Cafe' }
 		],
@@ -104,6 +103,7 @@
 				time: '2:00 PM – 3:30 PM',
 				title: 'Panel 8: Women As The Agents Of Social Change In Kazakhstan: Voices Of Women In Art',
 				type: 'panel',
+				location: 'Franke Institute for the Humanities · 1100 E 57th St, Chicago, IL 60637',
 				speakers: [
 					{ name: 'Dr. Moldiyar Yerbekov', affiliation: 'Nazarbayev University', talk: '\u201CFemale Leadership and Collaboration in Contemporary Kazakh Cinema and Creative Industries.\u201D' },
 					{ name: 'Aigerim Kussaiynkyzy', affiliation: 'Maqsut Narikbayev University', talk: '\u201CWomen, Voice, and Symbolic Capital: Positioning Female Artists in Kazakhstan\u2019s Contemporary Music Field.\u201D' },
@@ -116,7 +116,6 @@
 				title: 'Panel 9: Diaspora, Ethnography and Turkology',
 				type: 'panel',
 				concurrent: true,
-				location: 'Franke Institute for the Humanities · 1100 E 57th St, Chicago, IL 60637',
 				moderator: 'Dr. Ka\u011Fan Ar\u0131k',
 				speakers: [
 					{ name: 'Tianyi Yuan', affiliation: 'University of Chicago', talk: '\u201CTian and Tengri on the K\u00FCl Tigin Monument: Bilingual Inscription and Nomadic Political Cosmology.\u201D' },

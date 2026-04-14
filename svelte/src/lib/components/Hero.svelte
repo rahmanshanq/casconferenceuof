@@ -1,8 +1,8 @@
 <script>
-	let days = $state('--');
-	let hours = $state('--');
-	let mins = $state('--');
-	let secs = $state('--');
+	let days = $state();
+	let hours = $state();
+	let mins = $state();
+	let secs = $state();
 	let isLive = $state(false);
 
 	function updateCountdown() {
