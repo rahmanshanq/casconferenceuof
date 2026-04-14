@@ -79,13 +79,12 @@
     padding: 120px 24px 80px;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(180deg, var(--green-dark) 0%, #1F2212 50%, var(--green-dark) 100%);
+    background: url('img/artwork-bg.jpg') center center / cover no-repeat;
   }
   .hero::before {
     content: '';
     position: absolute; inset: 0;
-    background: radial-gradient(ellipse at 30% 60%, rgba(184, 92, 56, 0.08) 0%, transparent 60%),
-                radial-gradient(ellipse at 70% 30%, rgba(200, 169, 110, 0.05) 0%, transparent 50%);
+    background: rgba(43, 46, 26, 0.82);
     pointer-events: none;
   }
   .hero-badge {
@@ -97,6 +96,7 @@
     padding: 8px 22px; border-radius: 20px;
     margin-bottom: 28px;
     background: rgba(200, 169, 110, 0.06);
+    position: relative; z-index: 1;
   }
   .hero h1 {
     font-size: clamp(2.2rem, 5.5vw, 4rem);
@@ -556,7 +556,7 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <div class="container">
+  <div class="container" style="position:relative;z-index:1;">
     <div class="hero-badge">Inaugural Conference</div>
     <h1>Voices through Art &amp; Culture: <em>Identity Formation in Central Asia, from Music to Architecture</em></h1>
     <p class="hero-sub"><strong style="color:var(--gold)">The first</strong> <strong>Central Asian Studies Conference</strong> at the <strong>University of Chicago</strong><br>
@@ -684,6 +684,7 @@
         <div class="schedule-event">
           <div class="schedule-time">2:30 PM &ndash; 3:45 PM</div>
           <div class="schedule-title">Panel 4: Memory and Loss in Central Asia</div>
+          <div class="schedule-chair">Moderator: Dr. Holly Shissler</div>
           <div class="schedule-talk"><span class="schedule-speaker">Saadat Musabaeva</span> (Independent Scholar | Kellogg Institute for International Studies) &ndash; &ldquo;Building Home in the Throat: Kyrgyz Folk Singing, Embodied Memory, and Intergenerational Trauma.&rdquo;</div>
           <div class="schedule-talk"><span class="schedule-speaker">Lolisanam Ulugova</span> (Independent Scholar | Art Curator) &ndash; &ldquo;Animating Silence: Animation, Trauma, and Cultural Voice in Tajikistan.&rdquo;</div>
           <div class="schedule-talk"><span class="schedule-speaker">Zhaina Meirkhan</span> (University of Michigan, Ann Arbor) &ndash; &ldquo;The Forced Migrations of Kazakhs in 20th Century Eurasian Steppe and Beyond.&rdquo;</div>
@@ -693,7 +694,7 @@
           <div class="schedule-time">4:00 PM &ndash; 5:15 PM</div>
           <div class="schedule-title">Panel 5: Beyond the External Gaze: Challenging Marginalized Identity</div>
           <div class="schedule-chair">Moderator: Dr. Michael Bechtel</div>
-          <div class="schedule-talk"><span class="schedule-speaker">Dimitri Staszewski</span> (Independent Scholar | Documentary Photographer) &ndash; &ldquo;The World at Night.&rdquo;</div>
+          <div class="schedule-talk"><span class="schedule-speaker">Dimitri Staszewski</span> (Independent Scholar | Documentary Photographer) &ndash; &ldquo;The World at Night: The Spiritual Place of Wolves in Kazakh Herding Culture.&rdquo;</div>
           <div class="schedule-talk"><span class="schedule-speaker">Michael Lindsey</span> (University of California, Santa Cruz) &ndash; &ldquo;Heritage, Chops, and Humor: Glimpses of Identity among Professional Drummers in Kabul.&rdquo;</div>
           <div class="schedule-talk"><span class="schedule-speaker">Byambasuren Enkhee</span> (Independent Researcher) &ndash; &ldquo;Finding one&rsquo;s own color,&rdquo; or, gender politics within the stand-up comedy industry in Ulaanbaatar.&rdquo;</div>
         </div>
@@ -701,11 +702,12 @@
         <div class="schedule-event schedule-keynote-block">
           <div class="schedule-time">5:30 PM &ndash; 6:45 PM</div>
           <div class="schedule-title">Keynote Address &mdash; Gulnur Mukazhanova</div>
+          <div class="schedule-talk" style="font-style:italic;color:var(--terracotta-light);">&ldquo;Contemporary Art from Kazakhstan: Identity, Memory and Cultural Transformation&rdquo;</div>
         </div>
 
         <div class="schedule-event schedule-break">
           <div class="schedule-time">6:45 PM &ndash; 7:45 PM</div>
-          <div class="schedule-title">Dinner</div>
+          <div class="schedule-title">Dinner, Cello and Viola Performance</div>
         </div>
       </div>
     </div>
@@ -731,6 +733,7 @@
         <div class="schedule-event">
           <div class="schedule-time">10:30 AM &ndash; 11:45 AM</div>
           <div class="schedule-title">Panel 7: Musical Creativity through Time and Borders</div>
+          <div class="schedule-chair">Moderator: Dr. Philip V. Bohlman</div>
           <div class="schedule-talk"><span class="schedule-speaker">Dr. Dave Fossum</span> (Arizona State University) &ndash; &ldquo;Remembered Innovation: Indigenous Turkmen Strategies for Historicizing Musical Creativity.&rdquo;</div>
           <div class="schedule-talk"><span class="schedule-speaker">Bita Takrimi</span> (Northwestern University) &ndash; &ldquo;Between Herat and Bukhara: Afghan Classical Music in the Persianate Cultural Sphere.&rdquo;</div>
           <div class="schedule-talk"><span class="schedule-speaker">Dr. Charlotte D&rsquo;Evelyn</span> (Skidmore College) &ndash; &ldquo;The Choor Fiddle and Sonic Imagination of the Past in Inner Mongolia, China.&rdquo;</div>
@@ -769,6 +772,7 @@
         <div class="schedule-event">
           <div class="schedule-time">3:45 PM &ndash; 5:00 PM</div>
           <div class="schedule-title">Panel 10: Making Soviet Central Asia through Literature</div>
+          <div class="schedule-chair">Moderator: Adam Laten Willson</div>
           <div class="schedule-talk"><span class="schedule-speaker">Zhanyl Adisbekova</span> (Independent Scholar) &ndash; &ldquo;Women&rsquo;s Emancipation And The Formation Of Hybrid Identities In Soviet Central Asia: Chyngyz Aitmatov&rsquo;s The First Teacher.&rdquo;</div>
           <div class="schedule-talk"><span class="schedule-speaker">Eleanor Womack</span> (Yale University) &ndash; &ldquo;Excavating Socialist Realism: Land and Literary Form in Ghabiden M&#363;stafin&rsquo;s Qaraghandy.&rdquo;</div>
           <div class="schedule-talk"><span class="schedule-speaker">Assel Uvaliyeva</span> (University of Southern California) &ndash; &ldquo;Stone Witnesses: Material Culture and Counter-Memory in Abish Kekilbayev&rsquo;s Ballads of Forgotten Years.&rdquo;</div>
@@ -887,12 +891,12 @@
       </div>
       <div class="committee-card fade-in">
         <div class="committee-role">Organizing Member</div>
-        <div class="committee-name">Adam Wilson</div>
+        <div class="committee-name">Adam Laten Willson</div>
         <div class="committee-dept">PhD, Slavic Languages and Literatures &middot; Northwestern University</div>
       </div>
       <div class="committee-card fade-in">
         <div class="committee-role">Organizing Member</div>
-        <div class="committee-name">Banu Kayir</div>
+        <div class="committee-name">Banu Kay&#305;r</div>
         <div class="committee-dept">PhD, Middle Eastern Studies &middot; University of Chicago</div>
       </div>
       <div class="committee-card fade-in">
@@ -925,6 +929,7 @@
       <img src="img/franke.png" alt="Franke Institute for the Humanities" class="sponsor-logo">
       <img src="img/ceeres.png" alt="CEERES" class="sponsor-logo">
       <img src="img/art-history.png" alt="Department of Art History" class="sponsor-logo">
+      <img src="img/dova.png" alt="Department of Visual Arts" class="sponsor-logo">
     </div>
   </div>
 </section>
@@ -934,7 +939,8 @@
   <div class="container">
     <p>Central Asian Studies Conference 2026 &middot; University of Chicago<br>
     Organized by the Central Asian Studies Society</p>
-    <p style="font-size:0.72rem;color:var(--text-muted);margin-top:12px;">Website designed & built by <a href="https://www.linkedin.com/in/rahmanshanq/" target="_blank" style="color:var(--terracotta-light);">@Rahman Shanq</a> :)</p>
+    <p style="font-size:0.72rem;color:var(--text-muted);margin-top:12px;">Artwork by Karina Gimalova, &ldquo;Harmony,&rdquo; used with permission. <a href="https://instagram.com/carinagimalova" target="_blank" style="color:var(--terracotta-light);">@carinagimalova</a></p>
+    <p style="font-size:0.72rem;color:var(--text-muted);margin-top:8px;">Website created by <a href="https://www.linkedin.com/in/rahmanshanq/" target="_blank" style="color:var(--terracotta-light);">@Rahman Shanq</a> :)</p>
   </div>
 </footer>
 
