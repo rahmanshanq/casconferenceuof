@@ -26,39 +26,44 @@
 	});
 </script>
 
-<section id="home" class="min-h-screen flex items-center justify-center text-center pt-[120px] pb-20 px-6 relative overflow-hidden">
+<section id="home" class="min-h-screen flex items-center justify-center text-center pt-[120px] pb-20 px-5 relative overflow-hidden">
 	<div class="absolute inset-0 bg-green-dark/[0.75]"></div>
 
-	<div class="relative z-10 max-w-[1100px] mx-auto">
-		<div class="inline-block text-[0.72rem] font-semibold tracking-[0.2em] uppercase text-gold border border-gold/40 px-5 py-2 rounded-full mb-7 bg-gold/[0.06]">
+	<div class="relative z-10 w-full max-w-[1100px] mx-auto">
+		<div class="inline-block text-[0.68rem] font-semibold tracking-[0.2em] uppercase text-gold border border-gold/40 px-4 py-2 rounded-full mb-6 bg-gold/[0.06]">
 			Inaugural Conference
 		</div>
 
-		<h1 class="font-heading font-normal text-cream max-w-[820px] mx-auto mb-5 leading-tight text-[clamp(2.2rem,5.5vw,4rem)]">
+		<h1 class="font-heading font-normal text-cream max-w-[820px] mx-auto mb-5 leading-tight text-[clamp(1.6rem,5.5vw,4rem)]">
 			Voices through Art &amp; Culture: <em class="italic text-terracotta-light">Identity Formation in Central Asia, from Music to Architecture</em>
 		</h1>
 
-		<p class="text-[1.1rem] text-cream-muted mb-10 font-light">
-			<strong class="font-medium"></strong> <strong class="text-cream font-medium">The first Central Asian Studies Conference at the University of Chicago</strong><br />
-			April 17–18, 2026<br />Ida Noyes Library, University of Chicago
+		<p class="text-[0.95rem] md:text-[1.1rem] text-cream-muted mb-8 font-light px-2">
+			<strong class="text-gold font-medium">The first</strong> <strong class="text-cream font-medium">Central Asian Studies Conference</strong> at the <strong class="text-cream font-medium">University of Chicago</strong><br />
+			<strong class="text-cream font-medium">April 17–18, 2026</strong> · Ida Noyes Library, University of Chicago
 		</p>
 
 		{#if isLive}
 			<div class="font-heading text-[1.4rem] text-terracotta-light italic mb-10">The conference is happening now!</div>
 		{:else}
-			<div class="flex gap-7 justify-center mb-11">
+			<div class="flex gap-2 md:gap-5 justify-center mb-10 flex-wrap">
 				{#each [['days', days, 'Days'], ['hours', hours, 'Hours'], ['mins', mins, 'Minutes'], ['secs', secs, 'Seconds']] as [, value, label]}
-					<div class="text-center">
-						<div class="font-heading text-[3.2rem] font-bold text-terracotta-light leading-none">{value}</div>
-						<div class="text-[0.68rem] uppercase tracking-[0.15em] text-text-muted mt-1.5">{label}</div>
+					<div class="text-center border border-gold/30 bg-gold/[0.06] rounded-lg px-3 md:px-5 py-3 min-w-[64px] md:min-w-[80px]">
+						<div class="font-heading text-[2.2rem] md:text-[3.2rem] font-bold text-terracotta-light leading-none">{value}</div>
+						<div class="text-[0.62rem] md:text-[0.68rem] uppercase tracking-[0.12em] text-text-muted mt-1.5">{label}</div>
 					</div>
 				{/each}
 			</div>
 		{/if}
 
-		<a href="#register" class="inline-flex items-center gap-2 bg-terracotta text-cream px-8 py-3.5 rounded-md text-[0.9rem] font-medium tracking-wide hover:bg-terracotta-dark transition-all hover:-translate-y-0.5 no-underline">
-			Register for the Conference →
-		</a>
+		<div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+			<a href="#register" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-terracotta text-cream px-7 py-3.5 rounded-md text-[0.9rem] font-medium tracking-wide hover:bg-terracotta-dark transition-all hover:-translate-y-0.5 no-underline">
+				Register for the Conference →
+			</a>
+			<a href="https://uchicago.zoom.us/j/94430528985?pwd=Sp2EeKoUJkkCtiBiaPQaT0vdGbjmiP.1" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-gold/40 text-gold bg-gold/[0.06] px-7 py-3.5 rounded-md text-[0.9rem] font-medium tracking-wide hover:bg-gold/[0.12] transition-all hover:-translate-y-0.5 no-underline">
+				Join on Zoom →
+			</a>
+		</div>
 
 		<div class="w-[60px] h-px bg-terracotta/50 mx-auto mt-12"></div>
 	</div>

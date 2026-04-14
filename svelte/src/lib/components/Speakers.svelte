@@ -2,7 +2,7 @@
 	const speakers = [
 		{
 			name: 'Dr. Theodore C. Levin',
-			role: 'Arthur R. Virgin Professor of Music, Dartmouth University',
+			role: 'Arthur R. Virgin Professor of Music, Dartmouth College',
 			photo: '/img/speaker-levin.jpg',
 			bio: 'Theodore Levin is a longtime student of music, expressive culture, and traditional spirituality in Central Asia and Siberia. He served as the first executive director of the Silk Road Project, founded by cellist Yo-Yo Ma. His research and advocacy activities focus on the role of arts and culture in international development, and on the preservation and revitalization of musical heritage. Author of <em>The Music of Central Asia</em>.',
 			link: 'https://faculty-directory.dartmouth.edu/theodore-levin',

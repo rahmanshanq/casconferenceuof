@@ -64,9 +64,10 @@
 				time: '5:30 PM – 6:45 PM',
 				title: 'Keynote Address \u2014 Gulnur Mukazhanova',
 				type: 'keynote',
-				talk: '\u201CContemporary Art from Kazakhstan: Identity, Memory and Cultural Transformation\u201D'
+				talk: '\u201CContemporary Art from Kazakhstan: Identity, Memory and Cultural Transformation\u201D',
+				location: 'Franke Institute for the Humanities · 1100 E 57th St, Chicago, IL 60637'
 			},
-			{ time: '6:45 PM – 7:45 PM', title: 'Dinner, Cello and Viola Performance', type: 'break' }
+			{ time: '6:45 PM – 7:45 PM', title: 'Dinner · Cello and Viola Performance', type: 'break', provider: 'Arzan Cafe' }
 		],
 		saturday: [
 			{ time: '8:00 AM – 9:00 AM', title: 'Breakfast', type: 'break' },
@@ -96,10 +97,11 @@
 				time: '12:30 PM – 1:45 PM',
 				title: 'Keynote Address \u2014 Dr. Theodore C. Levin',
 				type: 'keynote',
-				talk: '\u201CExploring Central Asia through the Arts: A Half-Century\u2019s Observations.\u201D'
+				talk: '\u201CExploring Central Asia through the Arts: A Half-Century\u2019s Observations.\u201D',
+				location: 'Franke Institute for the Humanities · 1100 E 57th St, Chicago, IL 60637'
 			},
 			{
-				time: '2:00 PM – 3:45 PM',
+				time: '2:00 PM – 3:30 PM',
 				title: 'Panel 8: Women As The Agents Of Social Change In Kazakhstan: Voices Of Women In Art',
 				type: 'panel',
 				speakers: [
@@ -110,9 +112,11 @@
 				]
 			},
 			{
-				time: '2:00 PM – 3:45 PM · Ida Noyes',
+				time: '2:00 PM – 3:30 PM',
 				title: 'Panel 9: Diaspora, Ethnography and Turkology',
 				type: 'panel',
+				concurrent: true,
+				location: 'Franke Institute for the Humanities · 1100 E 57th St, Chicago, IL 60637',
 				moderator: 'Dr. Ka\u011Fan Ar\u0131k',
 				speakers: [
 					{ name: 'Tianyi Yuan', affiliation: 'University of Chicago', talk: '\u201CTian and Tengri on the K\u00FCl Tigin Monument: Bilingual Inscription and Nomadic Political Cosmology.\u201D' },
@@ -132,7 +136,7 @@
 					{ name: 'Assel Uvaliyeva', affiliation: 'University of Southern California', talk: '\u201CStone Witnesses: Material Culture and Counter-Memory in Abish Kekilbayev\u2019s Ballads of Forgotten Years.\u201D' }
 				]
 			},
-			{ time: '5:15 PM – 6:15 PM', title: 'Dinner | Arzan Cafe | Closing Remarks', type: 'break' },
+			{ time: '5:15 PM – 6:15 PM', title: 'Dinner · Closing Remarks', type: 'break', provider: 'Arzan Cafe' },
 			{
 				time: '6:15 PM – 8:30 PM',
 				title: 'Alash and Tuvergen Concert',
@@ -179,6 +183,9 @@
 						<div class="bg-terracotta/[0.06] rounded-md px-4 py-2.5 my-1">
 							<div class="text-[0.78rem] font-semibold text-terracotta-light tracking-wide mb-1">{item.time}</div>
 							<div class="font-heading text-[1rem] text-gold">{item.title}</div>
+							{#if item.provider}
+								<div class="text-[0.75rem] text-text-muted mt-1">Provided by {item.provider}</div>
+							{/if}
 						</div>
 
 					{:else if item.type === 'keynote'}
@@ -188,12 +195,18 @@
 							{#if item.talk}
 								<div class="text-[0.88rem] italic text-terracotta-light">{item.talk}</div>
 							{/if}
+							{#if item.location}
+								<div class="text-[0.78rem] text-text-muted mt-2">📍 {item.location}</div>
+							{/if}
 						</div>
 
 					{:else}
 						<div class="py-4 border-b border-white/[0.04]">
 							<div class="text-[0.78rem] font-semibold text-terracotta-light tracking-wide mb-1">{item.time}</div>
 							<div class="font-heading text-[1.15rem] text-cream mb-1">{item.title}</div>
+							{#if item.location}
+								<div class="text-[0.78rem] text-text-muted mb-2">📍 {item.location}</div>
+							{/if}
 							{#if item.moderator}
 								<div class="text-[0.8rem] text-text-muted italic mb-2">Moderator: {item.moderator}</div>
 							{/if}
