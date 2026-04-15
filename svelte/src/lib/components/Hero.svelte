@@ -39,7 +39,7 @@
 		</h1>
 
 		<p class="text-[0.95rem] md:text-[1.1rem] text-cream-muted mb-8 font-light px-2">
-			<strong class="text-gold font-medium">The first</strong> <strong class="text-cream font-medium">Central Asian Studies Conference</strong> at the <strong class="text-cream font-medium">University of Chicago</strong><br />
+			<strong class="text-cream font-medium">The first-ever Central Asian Studies Conference  at the University of Chicago</strong><br/>
 			<strong class="text-cream font-medium">April 17–18, 2026</strong> · Ida Noyes Library, University of Chicago
 		</p>
 
