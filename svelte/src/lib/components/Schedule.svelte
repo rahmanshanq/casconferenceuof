@@ -104,6 +104,7 @@
 				title: 'Panel 8: Women As The Agents Of Social Change In Kazakhstan: Voices Of Women In Art',
 				type: 'panel',
 				location: 'Franke Institute for the Humanities · 1100 E 57th St, Chicago, IL 60637',
+				moderator: 'Dr. Sevda Numanbayraktaroglu',
 				speakers: [
 					{ name: 'Dr. Moldiyar Yerbekov', affiliation: 'Nazarbayev University', talk: '\u201CFemale Leadership and Collaboration in Contemporary Kazakh Cinema and Creative Industries.\u201D' },
 					{ name: 'Aigerim Kussaiynkyzy', affiliation: 'Maqsut Narikbayev University', talk: '\u201CWomen, Voice, and Symbolic Capital: Positioning Female Artists in Kazakhstan\u2019s Contemporary Music Field.\u201D' },
