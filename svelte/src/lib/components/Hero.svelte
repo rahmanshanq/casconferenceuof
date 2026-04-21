@@ -1,9 +1,9 @@
 <script>
-	let days = $state();
-	let hours = $state();
-	let mins = $state();
-	let secs = $state();
-	let isLive = $state(false);
+	let days = $state('--');
+	let hours = $state('--');
+	let mins = $state('--');
+	let secs = $state('--');
+	let isLive = $state(true);
 
 	function updateCountdown() {
 		const target = new Date('2026-04-17T08:00:00-05:00');
@@ -39,12 +39,12 @@
 		</h1>
 
 		<p class="text-[0.95rem] md:text-[1.1rem] text-cream-muted mb-8 font-light px-2">
-			<strong class="text-cream font-medium">The first-ever Central Asian Studies Conference  at the University of Chicago</strong><br/>
+			<strong class="text-gold font-medium">The first</strong> <strong class="text-cream font-medium">Central Asian Studies Conference</strong> at the <strong class="text-cream font-medium">University of Chicago</strong><br />
 			<strong class="text-cream font-medium">April 17–18, 2026</strong> · Ida Noyes Library, University of Chicago
 		</p>
 
 		{#if isLive}
-			<div class="font-heading text-[1.4rem] text-terracotta-light italic mb-10">The conference is happening now!</div>
+			<div class="font-heading text-[1.4rem] text-terracotta-light italic mb-10">The conference has concluded. Thank you for joining us!</div>
 		{:else}
 			<div class="flex gap-2 md:gap-5 justify-center mb-10 flex-wrap">
 				{#each [['days', days, 'Days'], ['hours', hours, 'Hours'], ['mins', mins, 'Minutes'], ['secs', secs, 'Seconds']] as [, value, label]}
@@ -57,11 +57,8 @@
 		{/if}
 
 		<div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
-			<a href="#register" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-terracotta text-cream px-7 py-3.5 rounded-md text-[0.9rem] font-medium tracking-wide hover:bg-terracotta-dark transition-all hover:-translate-y-0.5 no-underline">
-				Register for the Conference →
-			</a>
-			<a href="https://uchicago.zoom.us/j/94430528985?pwd=Sp2EeKoUJkkCtiBiaPQaT0vdGbjmiP.1" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-gold/40 text-gold bg-gold/[0.06] px-7 py-3.5 rounded-md text-[0.9rem] font-medium tracking-wide hover:bg-gold/[0.12] transition-all hover:-translate-y-0.5 no-underline">
-				Join on Zoom →
+			<a href="#schedule" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-terracotta text-cream px-7 py-3.5 rounded-md text-[0.9rem] font-medium tracking-wide hover:bg-terracotta-dark transition-all hover:-translate-y-0.5 no-underline">
+				View the Program →
 			</a>
 		</div>
 

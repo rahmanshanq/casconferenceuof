@@ -23,7 +23,7 @@
 			<a href="#schedule" class="text-[0.78rem] font-medium text-cream-muted uppercase tracking-wider hover:text-terracotta-light transition-colors no-underline">Schedule</a>
 			<a href="#festival" class="text-[0.78rem] font-medium text-cream-muted uppercase tracking-wider hover:text-terracotta-light transition-colors no-underline">Music Festival</a>
 			<a href="#committee" class="text-[0.78rem] font-medium text-cream-muted uppercase tracking-wider hover:text-terracotta-light transition-colors no-underline">Committee</a>
-			<a href="#register" class="text-[0.78rem] font-medium text-terracotta-light uppercase tracking-wider hover:text-cream transition-colors no-underline">Register</a>
+			<a href="#register" class="text-[0.78rem] font-medium text-terracotta-light uppercase tracking-wider hover:text-cream transition-colors no-underline">Thank You</a>
 		</div>
 	</div>
 
